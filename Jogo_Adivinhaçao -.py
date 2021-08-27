@@ -11,7 +11,7 @@ if pergunta == resp2:
     print('Okay, quem sabe na próxima, Até Logo.')
 elif pergunta == resp1:
     print('Okay, Então vamos nessa. ')
-    print('Você terá 10 tentativas, Boa sorte. ')
+    print('Você terá 5 tentativas, Boa sorte. ')
     print('CARREGANDO O JOGO, AGUARDE...')
     sleep(2)
     print('=' * 26)
@@ -25,7 +25,7 @@ elif pergunta == resp1:
         if jogador == computador:
             acertou = True
             print(f'Parabéns você ganhou depois de {palpites} tentativas.')
-        elif palpites >= 10:
+        elif palpites >= 5:
             acertou = True
             print('GAME OVER.')
         elif jogador < computador:
